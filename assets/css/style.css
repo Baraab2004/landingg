@@ -9,6 +9,7 @@ body{
     display: flex;
     align-items: center;
     gap: 2px;
+    flex-wrap: wrap;
 }
 .header .logo img{
     width: 32px;
@@ -16,6 +17,7 @@ body{
 .nav ul{
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 .header{
     background-color: #fff;
@@ -33,6 +35,7 @@ body{
     gap: 10px;
     font-weight: 700;
     font-family: var(--subFont);
+    flex-wrap: wrap;
 }
 .link a{
     padding: 5.3541765213012695px 20.18113136291504px;
@@ -46,4 +49,17 @@ body{
 .link .Register{
     color: white;
     background-color: var(--mainColor);
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        order: 2;
+    }
+
 }
