@@ -1,0 +1,49 @@
+body{
+    background-color: #eee;
+    font-family: var(--mainFont);
+}
+.header .home{
+    font-weight: 800;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.header .logo img{
+    width: 32px;
+}
+.nav ul{
+    display: flex;
+    gap: 16px;
+}
+.header{
+    background-color: #fff;
+    padding: 20px;
+}
+.nav ul li a{
+    color: black;
+}
+.header .logo a{
+    color: var(--mainColor);
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-family: var(--subFont);
+}
+.link a{
+    padding: 5.3541765213012695px 20.18113136291504px;
+    border-radius: 10px;
+    text-align: center;
+}
+.link .login{
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+}
+.link .Register{
+    color: white;
+    background-color: var(--mainColor);
+}
