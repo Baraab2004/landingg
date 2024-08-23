@@ -5,16 +5,16 @@ body{
 .header .home{
     font-weight: 800;
 }
-.header .logo{
+.logo{
     display: flex;
     align-items: center;
     gap: 2px;
     flex-wrap: wrap;
 }
-.header .logo img{
+.logo img{
     width: 32px;
 }
-.nav ul{
+.navbar ul{
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
@@ -23,11 +23,12 @@ body{
     background-color: #fff;
     padding: 20px;
 }
-.nav ul li a{
+.navbar ul li a{
     color: black;
 }
-.header .logo a{
+.logo a{
     color: var(--mainColor);
+    font-family: var(--headingfount);
 }
 .link {
     display: flex;
@@ -54,7 +55,7 @@ body{
     display: none;
 }
 @media screen and (max-width: 992px){
-    .nav{
+    .navbar{
         display: none;
     }
     .menu{
@@ -75,4 +76,42 @@ body{
     .header .logo a{
         font-size: 13px;
     }
+}
+.footer{
+    background-color:#393E46;
+    color: #fff;
+    font-family: var(--mainFont);
+}
+.footer-item a{
+    color:#F4F4F4;
+}
+.start-footer .logo a{
+    color: #fff;
+}
+.start-footer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.start-footer .item img{
+    border: 1px solid white;
+    width: 13.8px;
+    height: 13.8px;
+    padding: 5px;
+    margin: 5px;
+}
+.footer-item nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.end-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px;
+    flex-wrap: wrap;
 }
