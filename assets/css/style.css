@@ -1,10 +1,11 @@
 body{
-    background-color: #eee;
+    background-color: #fff;
     font-family: var(--mainFont);
 }
 .header .home{
     font-weight: 800;
 }
+/*Start Header */
 .logo{
     display: flex;
     align-items: center;
@@ -22,6 +23,8 @@ body{
 .header{
     background-color: #fff;
     padding: 20px 0px;
+    box-shadow: 0px 5.6474391222000122px 9.23719596862793px rgba(0, 0, 0, 0.226);
+
 }
 .navbar ul li a{
     color: black;
@@ -77,6 +80,66 @@ body{
         font-size: 13px;
     }
 }
+/*End Header */
+
+/*Start Testimonials*/
+.testimonials{
+    padding: 50px 0;
+}
+
+.testimonials h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+}
+.testimonials .row{
+    gap: 40px;
+    font-family: var(--mainFont);
+}
+.testimonial{
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: calc((100% - 40px) / 2);
+    background-color: #ffffff;
+}
+.user-data span{
+    color: #969696;
+}
+.testimonial .user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.testimonial .user-data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.testimonial .user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.testimonial blockquote{
+    color: #646464;
+}
+.rating i{
+    color: gold;
+}
+@media screen and (max-width: 992px){
+    .testimonial{
+        width: 100%;
+    }
+}
+/*End Testimonials*/
+
+/*Start Footer */
 .footer{
     background-color:#393E46;
     color: #fff;
@@ -138,3 +201,5 @@ body{
         margin: 20px;
     }
 }
+
+/* End Footer */
