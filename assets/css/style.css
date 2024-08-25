@@ -81,7 +81,127 @@ body{
     }
 }
 /*End Header */
+/*Start Introduction*/
+.introduction{
+    padding: 50px 0;
+}
+.introduction .row{
+    gap: 40px;
+}
+.introduction .content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: calc((100% - 40px) / 2);
+    padding: 20px;
+    flex-wrap: wrap;
 
+}
+.introduction .title{
+    font-size: 27px;
+    font-family: var(--mainFont);
+    font-weight: 700;
+    width: 300px;
+    color: #141E32;
+    display: flex;
+    flex-wrap: wrap;
+}
+.introduction .intro-head{
+    display: flex;
+    flex-wrap: wrap;
+    width: 41px;
+    font-family: var(--subFont);
+    font-weight: 400;
+    color: var(--mainColor);
+}
+.introduction .link-intro{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    font-family: var(--subFont);
+    flex-wrap: wrap;
+}
+
+.introduction .link-intro a {
+    padding: 5.3541765213012695px 20.18113136291504px;
+    border-radius: 10px;
+    text-align: center;
+}
+.introduction .link-intro .Register{
+    color: #FFFFFF;
+    background-color: var(--mainColor);
+    font-family: var(--subFont);
+}
+
+.introduction .link-intro .Play-Video{
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 5px;
+}
+.introduction .link-intro .Play-Video img{
+    width:28px;
+    height: 28px;
+}
+.introduction .title strong{
+    color: var(--mainColor);
+}
+.introduction .discription{
+    display: flex;
+    flex-wrap: wrap;
+    color: #969696;
+}
+.introduction .Group{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.introduction .Group img{
+    width: 360px;
+    margin-top: 25px;
+
+}
+
+@media screen and (max-width: 992px){
+    .introduction .Group{
+        width:100%;
+        padding: 20px;
+    }
+    .introduction .Group img{
+        margin-left: 250px;
+    }
+    .introduction .content{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .introduction .Group img{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 576px){
+    .introduction .Group img{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 420px){
+    .introduction .title{
+        font-size: 20px;
+        font-weight: 300;
+        width: 150px;
+    }
+
+}
+
+
+
+
+
+/*End Introduction*/
 /*Start Testimonials*/
 .testimonials{
     padding: 50px 0;
