@@ -29,7 +29,8 @@ body {
     background-color: #fff;
     padding: 20px 0px;
     box-shadow: 0px 5.6474391222000122px 9.23719596862793px rgba(0, 0, 0, 0.226);
-
+    position: sticky;
+    top: 0;
 }
 
 .navbar ul li a {
@@ -448,7 +449,96 @@ body {
 }
 
 /*End Get From Us*/
+/*Start selected course*/
+.selected-course{
+    padding: 50px 0;
+    background: linear-gradient(180deg, #545be8 0%, #2f3382 100%);
+}
+.selected-course .row{
+    display: flex;
+    gap: 30px;
+}
+.selected-course .img-selected{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.selected-course .data-selected{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+}
+#p1{
+    color: #F0C932;
+    font-family: var(--subFont);
+}
+#p2{
+    color: #c3c3c3;
+    font-family: var(--mainFont);
+    width: 400px;
+}
+
+.selected-course .data-selected h1{
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    width: 300px;
+}
+.selected-course .img-selected img{
+    width: 380px;
+}
+
+.selected-course .data-selected .num{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    font-family: var(--subFont);
+    flex-wrap: wrap;
+}
+.num p{
+    color: #c3c3c3;
+}
+.num h3{
+    color: #F0C932;
+}
+.num .num-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 996px) {
+    .selected-course .img-selected{
+        order: 1;
+        width: 100%;
+    }
+    .selected-course .data-selected{
+        width: 100%;
+    }
+    .selected-course .row{
+        gap: 45px;
+    }
+    .selected-course .data-selected h1{
+        width: 100%;
+    }
+    #p2{
+        width: 100%;
+    }
+    .selected-course .data-selected .num{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 445px){
+    .selected-course .data-selected .num{
+        flex-direction: column;
+    }
+}
+/*End selected course*/
 /*Start Testimonials*/
 .testimonials {
     padding: 50px 0;
@@ -521,6 +611,7 @@ body {
 }
 
 /*End Testimonials*/
+
 
 /*Start Footer */
 .footer {
@@ -595,5 +686,4 @@ body {
         margin: 20px;
     }
 }
-
 /* End Footer */
