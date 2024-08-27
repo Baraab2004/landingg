@@ -29,8 +29,6 @@ body {
     background-color: #fff;
     padding: 20px 0px;
     box-shadow: 0px 5.6474391222000122px 9.23719596862793px rgba(0, 0, 0, 0.226);
-    position: sticky;
-    top: 0;
 }
 
 .navbar ul li a {
@@ -450,95 +448,210 @@ body {
 
 /*End Get From Us*/
 /*Start selected course*/
-.selected-course{
+.selected-course {
     padding: 50px 0;
     background: linear-gradient(180deg, #545be8 0%, #2f3382 100%);
 }
-.selected-course .row{
+
+.selected-course .row {
     display: flex;
     gap: 30px;
 }
-.selected-course .img-selected{
+
+.selected-course .img-selected {
     width: calc((100% - 30px) / 2);
     display: flex;
     flex-wrap: wrap;
 }
 
-.selected-course .data-selected{
+.selected-course .data-selected {
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
     width: calc((100% - 30px) / 2);
 }
-#p1{
+
+#p1 {
     color: #F0C932;
     font-family: var(--subFont);
 }
-#p2{
+
+#p2 {
     color: #c3c3c3;
     font-family: var(--mainFont);
     width: 400px;
 }
 
-.selected-course .data-selected h1{
+.selected-course .data-selected h1 {
     color: #fff;
     font-family: Poppins;
     font-weight: 700;
     font-size: 30px;
     width: 300px;
 }
-.selected-course .img-selected img{
+
+.selected-course .img-selected img {
     width: 380px;
 }
 
-.selected-course .data-selected .num{
+.selected-course .data-selected .num {
     display: flex;
     gap: 80px;
     align-items: center;
     font-family: var(--subFont);
     flex-wrap: wrap;
 }
-.num p{
+
+.num p {
     color: #c3c3c3;
 }
-.num h3{
+
+.num h3 {
     color: #F0C932;
 }
-.num .num-data{
+
+.num .num-data {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
 }
+
 @media screen and (max-width: 996px) {
-    .selected-course .img-selected{
+    .selected-course .img-selected {
         order: 1;
         width: 100%;
     }
-    .selected-course .data-selected{
+
+    .selected-course .data-selected {
         width: 100%;
     }
-    .selected-course .row{
+
+    .selected-course .row {
         gap: 45px;
     }
-    .selected-course .data-selected h1{
+
+    .selected-course .data-selected h1 {
         width: 100%;
     }
-    #p2{
+
+    #p2 {
         width: 100%;
     }
-    .selected-course .data-selected .num{
+
+    .selected-course .data-selected .num {
         gap: 20px;
     }
 }
-@media screen and (max-width: 445px){
-    .selected-course .data-selected .num{
+
+@media screen and (max-width: 445px) {
+    .selected-course .data-selected .num {
         flex-direction: column;
     }
 }
+
 /*End selected course*/
+/*Start Available Courses*/
+.courses{
+    padding: 50px 0;
+}
+.courses .row{
+    gap: 40px;
+    align-items: normal;
+}
+.courses-items,
+.course-desc{
+    width: calc((100% - 40px) / 2);
+}
+.courses-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.course{
+    width: calc((100% - 20px) / 2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.course-card{
+    position: relative;
+}
+
+.course-info span:first-of-type{
+    background-color: var(--mainColor);
+    padding: 10px;
+}
+.course-info span:last-of-type{
+    align-self: flex-end;
+}
+.course img{
+    width: 100%;
+    filter: brightness(80%);
+    display: flex;
+}
+.course-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+}
+.course-details{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.course .tag{
+    color: #969696;
+    display: flex;
+    gap: 15px;
+}
+.course-details span{
+    color: var(--mainColor);
+    font-weight: 400;
+    font-size: 12px;
+}
+.course-info .price{
+    font-weight: 700;
+    font-size: 18px;
+}
+.course-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.course-desc .link-course a{
+    padding: 5.3541765213012695px 20.18113136291504px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: var(--mainColor);
+    font-family: var(--subFont);
+}
+#p-desc{
+    color: var(--mainColor);
+    font-family: var(--subFont);
+}
+.course-desc h1{
+    color: black;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    width: 200px;
+}
+
+
+
+
+/*End Available Courses*/
+
 /*Start Testimonials*/
 .testimonials {
     padding: 50px 0;
@@ -686,4 +799,5 @@ body {
         margin: 20px;
     }
 }
+
 /* End Footer */
